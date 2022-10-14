@@ -1,23 +1,34 @@
-from random import randint
+from random import randint, shuffle
 # random
 # Python comes with a built in random library. There are a lot of functions included in this random library, so we will only 
 #show you two useful functions for now.
 #print("random1")
-dice1 = randint(1,7)
-print(f"dice1 : {dice1}")
-dice2 = randint(1,7)
-print(f"dice2 : {dice2}")
-roll_doubles = dice1 == dice2
-if roll_doubles:
-  print("You rolled doubles")
-if dice1 and dice2 == 1:
-  print("You rolled snake eyes")
-else: print("You did not roll snake eyes")
+# dice1 = randint(1,7)
+# print(f"dice1 : {dice1}")
+# dice2 = randint(1,7)
+# print(f"dice2 : {dice2}")
+# roll_doubles = dice1 == dice2
+# if roll_doubles:
+#   print("You rolled doubles")
+# if dice1 and dice2 == 1:
+#   print("You rolled snake eyes")
+# else: print("You did not roll snake eyes")
 # from random import shuffle
 # # This shuffles the list "in-place" meaning it won't return
 # # anything, instead it will effect the list passed
- 
-# shuffle(mylist)
+my_list = range(1,51)
+print("My new list")
+print(list(my_list))
+my_list = list(my_list)
+shuffle(my_list)
+print(my_list)
+
+num = randint(1,200)
+print(num)
+if num %2 == 0:
+  print("Number is even")
+else: print("Number is odd")
+#shuffle(my_list)
 # mylist
   
 # [40, 10, 100, 30, 20]
