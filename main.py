@@ -1,4 +1,4 @@
-from random import randint, shuffle, choice
+from random import randint, shuffle, choice, random
 # random
 # Python comes with a built in random library. There are a lot of functions included in this random library, so we will only 
 #show you two useful functions for now.
@@ -57,7 +57,7 @@ random_number = randint(1,10)
 print(random_number)
 # Random Practice #2
 # Implement the random() function from the random library to obtain a real number between 0 and 1, and store that value in a variable called random_number.
-random_number = randint(0,1)
+random_number = random()
 print(random_number)
   
 # Random Practice #3
